@@ -4,13 +4,13 @@ import { MdAccessTime } from "react-icons/md";
 import { AiOutlineFire } from "react-icons/ai";
 const Recipe = ({ recipe, handleToCooking }) => {
 
-    const {recipe_name, recipe_id, recipe_img, description, prepare_time, calories, ingredients} = recipe;
+    const {recipe_name, recipe_img, description, prepare_time, calories, ingredients} = recipe;
 
     return (
        <div className='shadow-2xl rounded-2xl border-dashed'>
          <div>
             <img className='w-full object-cover h-[300px] rounded-3xl' src={recipe_img} alt="" />
-            <h2 className='text-2xl font-bold text-black py-4 text-center'>{recipe_id}: {recipe_name}</h2>
+            <h2 className='text-2xl font-bold text-black py-4 text-center'>{recipe_name}</h2>
             <p className='border-b-2 text-[#878787] font-normal text-base mr-6 ml-6 py-4'>{description}</p>
             <div className='space-y-4 mb-3'>
             <p className='font-semibold text-lg text-center mt-4'>Ingredients: {ingredients.length}</p>

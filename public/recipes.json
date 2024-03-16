@@ -1,0 +1,67 @@
+[
+    {
+      "recipe_img": "https://i.ibb.co/CBydr7V/Erc-Pha-BVS2-OMnh07ii-Zf-banana-cake-with-cream-cheese-frosting-08.jpgs",
+      "recipe_id": 1,
+      "recipe_name": "Cake With Cream Cheese",
+      "description": "This is one of (if not) the BEST banana cake I have ever tasted! I thought the oven temp of 275°",
+      "ingredients": ["Mashed Bananas", "Flour", "Lemon Juice", "Baking Soda", "Sugar"],
+      "prepare_time": 45,
+      "calories": 250
+    },
+    
+    {
+      "recipe_img": "https://i.ibb.co/SKt1wvL/fuchka.webp",
+      "recipe_id": 2,
+      "recipe_name": "Yummy FUCHKA Recipe",
+      "description": "Everyone loves and craves this awesome snack, Fuchka. You can easily make this with what you have at home.",
+      "ingredients": ["1 cup Semolina", "3 tbsp Sugar", "All-purpose Flour", "1 tsp Lime Juice", "1 tbsp Red Chili"],
+      "prepare_time": 45,
+      "calories": 250
+    },
+    
+    {
+      "recipe_img": "https://i.ibb.co/m5m2bbc/strawberry-juice-9-1.jpg",
+      "recipe_id": 3,
+      "recipe_name": "Fresh Strawberry Juice",
+      "description": "Strawberry Juice is a heart filling cool drink. It is a great choice replacement for tea/coffee during summer.",
+      "ingredients": ["Strawberries", "Honey or Sugar", "Fresh Water", "Lemon juice(optional)"],
+      "prepare_time": 40,
+      "calories": 200
+    },
+    
+    {
+      "recipe_img": "https://i.ibb.co/0Ftww3Y/pudding.jpg",
+      "recipe_id": 4,
+      "recipe_name": "Dark Chocolate Pudding",
+      "description": "Desert on a weeknight will never be the same once you've made this decadent yet easy dessert.",
+      "ingredients": ["2 cups Whole Milk", "Sugar", "Cocoa Powder", "Cornstarch", "Egg Yolks"],
+      "prepare_time": 35,
+      "calories": 400
+    },
+    
+    {
+      "recipe_img": "https://i.ibb.co/KDtYnCv/oats.jpg",
+      "recipe_id": 5,
+      "recipe_name": "Overnight Oats Recipe",
+      "description": "Make these protein-packed overnight oats the night before, place them in the fridge, then enjoy..!",
+      "ingredients": ["Rolled Oats", "Almond milk", " Vanilla Greek Yogurt", "Whey Protein (Vanilla Flavor)"],
+      "prepare_time": 50,
+      "calories": 300
+    },
+    
+    {
+      "recipe_img": "https://i.ibb.co/KmYJjvc/portabello-mushroom-burger-recipe.jpg",
+      "recipe_id": 6,
+      "recipe_name": "Portobello Mushroom Burger",
+      "description": "This grilled Portobello Mushroom Burger recipe will be a hit with vegetarians and meat eaters alike..!",
+      "ingredients": ["1/4 cup Vinegar", "1 teaspoon Dijon Mustard", "1 teaspoon Italian Seasoning", "Pinch Black Pepper"],
+      "prepare_time": 50,
+      "calories": 350
+    }
+  ]
+  
+  
+  
+  
+  
+  

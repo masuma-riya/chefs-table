@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import { MdAccessTime } from "react-icons/md";
 import { AiOutlineFire } from "react-icons/ai";
-const Recipe = ({ recipe, handleToCooking }) => {
+const Recipe = ({ recipe, handleToCooking}) => {
 
     const {recipe_name, recipe_img, description, prepare_time, calories, ingredients} = recipe;
 

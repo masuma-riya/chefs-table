@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 const Cook = ({cook}) => {
     const {recipe_name, calories, prepare_time, recipe_id} = cook;
+    
     return (
        <div className='bg-[#150B2B0D]'>
         <div className='lg:flex justify-between p-4 m-6'>
@@ -16,7 +17,7 @@ const Cook = ({cook}) => {
 };
 
 Cook.propTypes = {
-    cook: PropTypes.object
+    cook: PropTypes.object,
 }
 
 export default Cook;

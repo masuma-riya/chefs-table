@@ -9,7 +9,7 @@ const Recipes = ({handleToCooking}) => {
         fetch('recipes.json')
         .then(res => res.json())
         .then(data => setRecipes(data))
-    }, [])
+    }, []);
 
     return (
         <div className="lg:w-3/4">
@@ -27,7 +27,7 @@ const Recipes = ({handleToCooking}) => {
 };
 
 Recipes.propTypes = {
-    handleToCooking: PropTypes.func
+    handleToCooking: PropTypes.func,
 }
 
 export default Recipes;

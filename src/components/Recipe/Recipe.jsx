@@ -30,7 +30,9 @@ const Recipe = ({ recipe, handleToCooking}) => {
             <span className='text-base font-semibold text-[#282828CC]'>{calories} calories</span>
             </div>
             </div>
+            <div className='text-center lg:text-start'>
             <button onClick={() => handleToCooking(recipe)} className="bg-[#0BE58A] text-base px-3 py-2 font-semibold rounded-3xl  border-none mt-6 mb-8 ml-6">Want To Cook</button>
+            </div>
         </div>
        </div>
     );

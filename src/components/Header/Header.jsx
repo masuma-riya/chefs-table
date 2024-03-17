@@ -5,7 +5,7 @@ const Header = () => {
     return (
 
         //navigation bar here
-      <div className="navbar bg-base-100 w-10/12 mx-auto h-36">
+      <div className="navbar bg-base-100 lg:w-10/12 lg:mx-auto h-36 flex justify-around">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

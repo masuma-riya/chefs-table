@@ -20,7 +20,7 @@ const Header = () => {
             <li><a>Search</a></li>
           </ul>
         </div>
-        <h1 className="text-lg lg:text-3xl font-bold">Recipe Calories</h1>
+        <h1 className="text-lg lg:text-3xl font-bold">Foddie Vibes</h1>
       </div>
       <div className="navbar-start hidden lg:flex mr-28 text-[#150B2BB3] font-normal">
         <ul className="menu menu-horizontal text-base">

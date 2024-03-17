@@ -10,13 +10,12 @@ import 'react-toastify/dist/ReactToastify.css'
 import CurrentCooking from './components/CurrentCooking/CurrentCooking'
 
 
-function App() {
+  function App() {
 
   const [cooking, setCooking] = useState([]);
   const [cooked, setCooked] = useState([]);
 
-  
-  //toast
+//toast
   const [preparing, setPreparing] = useState(false);
   const [prepare, setPrepare] = useState([]);
  
@@ -46,8 +45,7 @@ toast.success('This Recipe added Successfully!');
   }
   };
 
-
-  const handlePreparing = (item) =>{
+   const handlePreparing = (item) =>{
    const cookingFilter = cooking.filter((cook) => cook.id !== item.id);
    setCooking(cookingFilter);
    setCooked([...cooked, item])
@@ -73,7 +71,6 @@ toast.success('This Recipe added Successfully!');
       cooked={cooked}
       ></CurrentCooking>
       </div>
-    
       </div>
     </>
   )

@@ -7,10 +7,14 @@ import OurRecipes from './components/OurRecipes/OurRecipes'
 import Recipes from './components/Recipes/Recipes'
 import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import CurrentCooking from './components/CurrentCooking/CurrentCooking'
+
 
 function App() {
 
   const [cooking, setCooking] = useState([]);
+  const [cooked, setCooked] = useState([]);
+
   
   //toast
   const [preparing, setPreparing] = useState(false);
@@ -24,7 +28,7 @@ function App() {
    }
 
    if(prepare.includes(recipe)){
-    toast.error('This recipe has already been prepared.');
+    toast.error('Already Exist This Recipe..!');
     return;
    }
   try{
@@ -33,7 +37,7 @@ function App() {
     setCooking(newCooking);
     setPrepare([...prepare, recipe]);
     
-toast.success('This Recipe Prepared Successfully!');
+toast.success('This Recipe added Successfully!');
   } catch (error) {
     toast.error('Error preparing recipe, try again');
     console.error('Error preparing recipe:', error);
@@ -42,17 +46,34 @@ toast.success('This Recipe Prepared Successfully!');
   }
   };
 
+
+  const handlePreparing = (item) =>{
+   const cookingFilter = cooking.filter((cook) => cook.id !== item.id);
+   setCooking(cookingFilter);
+   setCooked([...cooked, item])
+   
+  }
+
   return (
     <>
     <ToastContainer />
       <Header></Header>
       <Banner></Banner>
       <OurRecipes></OurRecipes>
-      <div className='lg:flex max-w-7xl m-auto'>
-      <Recipes
+      <div className='grid grid-cols-12'>
+       <div className='col-span-12 lg:col-span-7'>
+       <Recipes
       handleToCooking={handleToCooking}
       ></Recipes>
-      <Cooking cooking={cooking}></Cooking>
+       </div>
+      
+      <div className='col-span-12 lg:col-span-5 shadow rounded-3xl border-dashed bg-sky-100 ml-4 mr-4 mt-6 mb-6 lg:mb-0 lg:mt-0'>
+      <Cooking handlePreparing={handlePreparing} cooking={cooking}></Cooking>
+      <CurrentCooking
+      cooked={cooked}
+      ></CurrentCooking>
+      </div>
+    
       </div>
     </>
   )

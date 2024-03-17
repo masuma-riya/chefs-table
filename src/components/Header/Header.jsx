@@ -34,7 +34,7 @@ const Header = () => {
       </div>
 
       <div className='space-x-4'>
-      <label className="input flex items-center gap-2 rounded-3xl bg-[#150B2B0D]">
+      <label className="input hidden lg:flex items-center gap-2 rounded-3xl bg-[#150B2B0D]">
         <p className='text-2xl'><IoSearchOutline></IoSearchOutline></p>
       
   <input type="text" className="grow font-normal text-[#150B2BB3] text-lg" placeholder="Search" />

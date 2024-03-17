@@ -12,8 +12,8 @@ const Recipes = ({handleToCooking}) => {
     }, []);
 
     return (
-        <div className="lg:w-3/4">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {
             recipes.map(recipe => <Recipe
             key={recipe.recipe_id}
